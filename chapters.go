@@ -57,10 +57,11 @@ type ChapterPage struct {
 }
 
 type ChapterParams struct {
-	BookID      int         `json:"book_id,omitempty"`
-	Name        string      `json:"name,omitempty"`
-	Description string      `json:"description,omitempty"`
-	Tags        []TagParams `json:"tags,omitempty"`
+	BookID          int         `json:"book_id,omitempty"`
+	Name            string      `json:"name,omitempty"`
+	Description     string      `json:"description,omitempty"`
+	DescriptionHtml string      `json:"description_html,omitempty"`
+	Tags            []TagParams `json:"tags,omitempty"`
 }
 
 func (bp ChapterParams) Form() (string, io.Reader, error) {

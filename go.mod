@@ -1,4 +1,4 @@
-module github.com/hcarriz/go-bookstack
+module github.com/generikvault/bookstack
 
 go 1.18
 

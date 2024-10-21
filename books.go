@@ -40,9 +40,10 @@ type BookDetailed struct {
 }
 
 type BookParams struct {
-	Name        string `json:"name,omitempty"`
-	Description string `json:"description,omitempty"`
-	Image       string `json:"image,omitempty"`
+	Name            string `json:"name,omitempty"`
+	Description     string `json:"description,omitempty"`
+	DescriptionHtml string `json:"description_html,omitempty"`
+	Image           string `json:"image,omitempty"`
 }
 
 func (bp BookParams) Form() (string, io.Reader, error) {
